@@ -1,0 +1,8 @@
+{
+    "name": "KinderGarden",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "Juan Sebastián Ramírez>",
+    "contributors": [],
+    "dependencies": {}
+}

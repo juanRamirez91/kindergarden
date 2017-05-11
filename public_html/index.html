@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
+    <head> 
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/materialize.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <title>Kindergarten/Amiguitos del saber</title>
         
     </head>
     <body>
-    <header>
-    	<nav>
-    		<ul id="slide-out" class="side-nav fixed">
-      			<li><a href="#!">First Sidebar Link</a></li>
-      			<li><a href="#!">Second Sidebar Link</a></li>
-    		</ul>
-    		<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-	    	<div class="nav-wrapper">
-	      		<a href="#" class="brand-logo">Amiguitos del saber</a>
-	      		<ul id="nav-mobile" class="right hide-on-med-and-down">
-		        	<li><a href="sass.html">Sass</a></li>
-		        	<li><a href="badges.html">Components</a></li>
-		        	<li><a href="collapsible.html">JavaScript</a></li>
-	      		</ul>
-    		</div>
-	  	</nav>
-    </header>
+        <!Cabecera, parte superior de la página>
+        <header>
+            <!Navegador>
+            <nav>
+	            <div class="container">
+	                <!Navegador lateral>
+	                <ul id="slide-out" class="side-nav fixed">
+	                        <li><a href="#!">First Sidebar Link</a></li>
+	                        <li><a href="#!">Second Sidebar Link</a></li>
+	                </ul>
+	                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+	                <!Navegador superior>
+	                <div class="nav-wrapper">
+	                        <a href="#" class="brand-logo">Amiguitos del saber</a>
+	                </div>
+                </div>
+            </nav>
+        </header>
 	    
+        <!Codigo JS>
         <script src="js/jquery.js"></script>  
 		<script src="js/materialize.js"></script>
 		<script>
@@ -38,15 +41,16 @@
   			);
 		</script>
     </body>
+    
+    <!Pie de pagina>
     <footer class="page-footer">
-            <div class="row">
-              <div class="col l6 s12">
-                <p class="grey-text text-lighten-4">Contáctenos</p>
-              </div>
-              
-            </div>
-          
-          
-          </div>
-        </footer>
+	    <div class="container">
+	    	<div class="row">
+	            <div class="col l6 s12">
+	                <p class="grey-text text-lighten-4">Contáctenos</p>
+	            </div>     
+	        </div>
+	    </div>
+        
+    </footer>
 </html>

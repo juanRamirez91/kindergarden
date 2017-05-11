@@ -2863,7 +2863,7 @@ ul.staggered-list li {
 
 .page-footer {
   padding-top: 20px;
-  background-color: #ee6e73;
+  background-color: #ff8f00;
 }
 
 .page-footer .footer-copyright {
@@ -4183,7 +4183,7 @@ nav ul a span.badge {
 
 nav {
   color: #fff;
-  background-color: #795548;
+  background-color: #ff8f00;
   width: 100%;
   height: 56px;
   line-height: 56px;
@@ -8950,3 +8950,22 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     margin-bottom: 5em;
   }
 }
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+  header, main, footer {
+      padding-left: 300px;
+    }
+
+    @media only screen and (max-width : 992px) {
+      header, main, footer {
+        padding-left: 0;
+      }
+    }

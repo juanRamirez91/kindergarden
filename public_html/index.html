@@ -5,40 +5,98 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/materialize.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="icon" href="/images/">
         <title>Kindergarten/Amiguitos del saber</title>
         
     </head>
     <body>
-        <!Cabecera, parte superior de la página>
-        <header>
+    	<!Cabecera, parte superior de la página>
+    	<header>
             <!Navegador>
             <nav>
 	            <div class="container">
 	                <!Navegador lateral>
-	                <ul id="slide-out" class="side-nav fixed">
-	                        <li><a href="#!">First Sidebar Link</a></li>
-	                        <li><a href="#!">Second Sidebar Link</a></li>
+	                <ul id="slide-out" class="side-nav fixed">	
+    						<a href="index.html"><img class="responsive-img" src="images/Inicio.PNG"></a>
+    						<ul class="collapsible" data-collapsible="accordion">
+								<li><a href="#!" class="collapsible-header waves-effect waves-teal">Modelo pedagógico</a></li>
+			         			<li>
+			            			<a class="collapsible-header waves-effect waves-teal">Servicios</a>
+			              			<div class="collapsible-body">
+
+				          				<ul class="collapsible" data-collapsible="accordion">
+				            				<li>
+				            					<a class="collapsible-header waves-effect waves-teal">Educación inicial</a>
+				          						<div class="collapsible-body">
+				            						<ul>
+				            							<li><a href="#!"  style="font-weight: 300">Maternal</a></li>
+				            							<li><a href="#!"  style="font-weight: 300">Caminadores</a></li>
+				            							<li><a href="#!"  style="font-weight: 300">Párvulos</a></li>
+				            						</ul>
+				            					</div>
+				            				</li>
+				            				<li>
+				            					<a class="collapsible-header waves-effect waves-teal">Educación Preescolar</a>
+				          						<div class="collapsible-body">
+				            						<ul>
+				            							<li><a href="#!"  style="font-weight: 300">Pre-jardín</a></li>
+				            							<li><a href="#!"  style="font-weight: 300">Jardín</a></li>
+				            							<li><a href="#!"  style="font-weight: 300">Transición</a></li>
+				            						</ul>
+				            					</div>
+				            				</li>
+				            				<li><a href="#!">Transporte</a></li>
+				            				<li><a href="#!">Vacaciones Recreativas</a></li>
+				            			</ul>
+			            			</div>
+			          			</li>
+			          			<li><a class="collapsible-header waves-effect waves-teal" href="#!">Regístrese</a></li>
+    						</ul>
+	                        
 	                </ul>
-	                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+	                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">&#xE5D2;</i></a>
 	                <!Navegador superior>
 	                <div class="nav-wrapper">
-	                        <a href="#" class="brand-logo">Amiguitos del saber</a>
+	                        <a href="#" class="brand-logo" style="font-family:schoolbell">Amiguitos del saber</a>
 	                </div>
                 </div>
             </nav>
         </header>
+        
 	    
+        <main>
+        	
+		  <div class="slider">
+		    <ul class="slides">
+		      <li>
+		        <img src="images/Menu.PNG"> 
+		        <div class="caption left-align">
+		          <h3 style="color: #ff6f00; font-family: schoolbell">Amiguitos del saber</h3>
+		          <h5 style="color: #ffb300">Los mejores de la ciudad</h5>
+		        </div>
+		      </li>
+		    </ul>
+		  </div>
+
+        </main>
+
+
         <!Codigo JS>
         <script src="js/jquery.js"></script>  
 		<script src="js/materialize.js"></script>
 		<script>
+
 			$('.button-collapse').sideNav({
       			menuWidth: 300, // Default is 300
       			edge: 'left', // Choose the horizontal origin
-      			closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      			closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
      			 draggable: true // Choose whether you can drag to open on touch screens
     			}
   			);
+  			$(document).ready(function(){
+      			$('.slider').slider();
+      			$('.collapsible').collapsible();
+    });
 		</script>
     </body>
     

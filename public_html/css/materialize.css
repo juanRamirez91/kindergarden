@@ -3,6 +3,9 @@
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+
+
+
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -8970,4 +8973,14 @@ body {
       }
     }
     
-    
+ @font-face {
+    font-family: 'schoolbellregular';
+    src: url('schoolbell-webfont.eot');
+    src: url('schoolbell-webfont.eot?#iefix') format('embedded-opentype'),
+         url('schoolbell-webfont.woff2') format('woff2'),
+         url('schoolbell-webfont.woff') format('woff'),
+         url('schoolbell-webfont.ttf') format('truetype'),
+         url('schoolbell-webfont.svg#schoolbellregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }

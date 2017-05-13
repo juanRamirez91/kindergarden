@@ -3,6 +3,9 @@
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+
+
+
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -2864,6 +2867,7 @@ ul.staggered-list li {
 .page-footer {
   padding-top: 20px;
   background-color: #ff8f00;
+  
 }
 
 .page-footer .footer-copyright {
@@ -4244,7 +4248,7 @@ nav .brand-logo {
   position: absolute;
   color: #fff;
   display: inline-block;
-  font-size: 2.1rem;
+  font-size: 3rem;
   padding: 0;
   white-space: nowrap;
 }
@@ -8950,16 +8954,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     margin-bottom: 5em;
   }
 }
-
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-
-  main {
-    flex: 1 0 auto;
-  }
   header, main, footer {
       padding-left: 300px;
     }
@@ -8970,4 +8964,41 @@ body {
       }
     }
     
-    
+ @font-face {
+    font-family: 'schoolbellregular';
+    src: url('schoolbell-webfont.eot');
+    src: url('schoolbell-webfont.eot?#iefix') format('embedded-opentype'),
+         url('schoolbell-webfont.woff2') format('woff2'),
+         url('schoolbell-webfont.woff') format('woff'),
+         url('schoolbell-webfont.ttf') format('truetype'),
+         url('schoolbell-webfont.svg#schoolbellregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .parallax-container {
+      height: 350px;
+    }
+
+  .kindergarten-header{
+    font-family: schoolbell;
+    color: white;
+  }
+  .kindergarten-header.center{
+    left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  }
+  .kindergarten-titulo{
+    font-family: schoolbell;
+    color: #ff8f00;
+  }  
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }

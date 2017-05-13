@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/materialize.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="icon" href="/images/">
         <title>Kindergarten/Amiguitos del saber</title>
         
     </head>
@@ -16,30 +17,115 @@
             <nav>
 	            <div class="container">
 	                <!Navegador lateral>
-	                <ul id="slide-out" class="side-nav fixed">
-	                        <li><a href="#!">First Sidebar Link</a></li>
-	                        <li><a href="#!">Second Sidebar Link</a></li>
+	                <ul id="slide-out" class="side-nav fixed">	
+    						<a href="index.html"><img class="responsive-img" src="images/logo.PNG"></a>
+    						<ul class="collapsible" data-collapsible="accordion">
+								<li><a href="#!" class="collapsible-header waves-effect waves-teal">Modelo pedagógico</a></li>
+			         			<li>
+			            			<a class="collapsible-header waves-effect waves-teal">Servicios</a>
+			              			<div class="collapsible-body">
+
+				          				<ul class="collapsible" data-collapsible="accordion">
+				            				<li>
+				            					<a class="collapsible-header waves-effect waves-teal">Educación inicial</a>
+				          						<div class="collapsible-body">
+				            						<ul>
+				            							<li><a href="#!"  style="font-weight: 300">Maternal</a></li>
+				            							<li><a href="#!"  style="font-weight: 300">Caminadores</a></li>
+				            							<li><a href="#!"  style="font-weight: 300">Párvulos</a></li>
+				            						</ul>
+				            					</div>
+				            				</li>
+				            				<li>
+				            					<a class="collapsible-header waves-effect waves-teal">Educación Preescolar</a>
+				          						<div class="collapsible-body">
+				            						<ul>
+				            							<li><a href="#!"  style="font-weight: 300">Pre-jardín</a></li>
+				            							<li><a href="#!"  style="font-weight: 300">Jardín</a></li>
+				            							<li><a href="#!"  style="font-weight: 300">Transición</a></li>
+				            						</ul>
+				            					</div>
+				            				</li>
+				            				<li><a href="#!">Transporte</a></li>
+				            				<li><a href="#!">Vacaciones Recreativas</a></li>
+				            			</ul>
+			            			</div>
+			          			</li>
+			          			<li><a class="collapsible-header waves-effect waves-teal" href="#!">Regístrese</a></li>
+    						</ul>
+	                        
 	                </ul>
-	                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+	                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">&#xE5D2;</i></a>
 	                <!Navegador superior>
 	                <div class="nav-wrapper">
-	                        <a href="#" class="brand-logo">Amiguitos del saber</a>
+	                        <a href="#" class="brand-logo center"><span class="kindergarten-header"> Amiguitos del saber</span></a>
 	                </div>
                 </div>
             </nav>
         </header>
+        
 	    
+        <main>
+        	<div class="parallax-container">
+    			<div class="parallax">
+    				<img src="images/ninos_jugando.jpg">
+				</div>
+			</div>
+		  	<div class="section white">
+    			<div class="row container">
+      				<h1 class="kindergarten-titulo">¿Quienes somos?</h1>
+      				<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+    			</div>
+	    	</div>
+
+
+			<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+	          	<a class="btn btn-large red">
+	          		<span>Contáctenos</span>
+	          	</a>
+          	</div>
+          	<div class="parallax-container">
+    			<div class="parallax">
+    				<img src="images/ninos_cantando.jpg">
+				</div>
+			</div>
+			<div class="section white">
+    			<div class="row container">
+      				<h1 class="kindergarten-titulo">Misión</h1>
+      				<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+    			</div>
+	    	</div>
+	    	<div class="parallax-container">
+    			<div class="parallax">
+    				<img src="images/jugueteria.jpg">
+				</div>
+			</div>
+			<div class="section white">
+    			<div class="row container">
+      				<h1 class="kindergarten-titulo">Visión</h1>
+      				<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+    			</div>
+	    	</div>
+        </main>
+
+
         <!Codigo JS>
         <script src="js/jquery.js"></script>  
 		<script src="js/materialize.js"></script>
 		<script>
+
 			$('.button-collapse').sideNav({
       			menuWidth: 300, // Default is 300
       			edge: 'left', // Choose the horizontal origin
-      			closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      			closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
      			 draggable: true // Choose whether you can drag to open on touch screens
     			}
   			);
+  			$(document).ready(function(){
+  				$('.parallax').parallax();
+      			$('.slider').slider();
+      			$('.collapsible').collapsible();
+    });
 		</script>
     </body>
     
@@ -48,7 +134,7 @@
 	    <div class="container">
 	    	<div class="row">
 	            <div class="col l6 s12">
-	                <p class="grey-text text-lighten-4">Contáctenos</p>
+	                <p class="grey-text text-lighten-4">Calle 56 # xx xxx</p>
 	            </div>     
 	        </div>
 	    </div>
